@@ -1,0 +1,1 @@
+    <p class="text-center">Copywrite - all rights received</p>
