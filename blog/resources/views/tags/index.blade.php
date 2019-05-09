@@ -29,7 +29,7 @@
 		<div class="col-md-4">
 			<div class="well">
 				<h2>Add New Tag</h2>
-				<!-- work on html fomr --?
+				<!-- work on html form --?
 				<!-- <form method="POST" action="/categories">
 					 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 					Name :<input type="text" name="name" class="form-control">

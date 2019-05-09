@@ -7,7 +7,7 @@
 @section('content')
             <div classs="row">
                 <div class="col-md-12">
-                    <h1>About us</h1>
+                    <h1>Contact us</h1>
                     <p>
                       <form action="{{ url('contact') }}" method="POST">
 

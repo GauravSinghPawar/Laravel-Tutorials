@@ -33,6 +33,19 @@
 		{{ Form::label('category_id', 'Category:', ['class'=>'form-spacing-top']) }}
 		{{ Form::select('category_id', $categories, null, ['class' => 'form-control']) }}
 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+    	$('.select2-multi').select2();
+	});
+
+</script>
+
+		
+
 		{{ Form::label('tags', 'Tags:', ['class' => 'form-spacing-top']) }}
 		{{ Form::select('tags[]', $tags, null, ['class' => 'form-control select2-multi', 'multiple' => 'multiple'] ) }}
 

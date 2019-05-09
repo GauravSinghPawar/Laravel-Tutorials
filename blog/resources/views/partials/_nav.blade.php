@@ -13,10 +13,10 @@
                 <a class="nav-link" href="/blog">Blog <span class="sr-only"></span></a>
               </li>
               <li class="nav-item {{ Request::is('about') ? "active" : "" }}">
-                <a class="nav-link" href="about">About Us</a>
+                <a class="nav-link" href="/about">About Us</a>
               </li>
               <li class="nav-item {{ Request::is('contact') ? "active" : "" }}">
-                <a class="nav-link" href="contact">Contact</a>
+                <a class="nav-link" href="/contact">Contact</a>
               </li>
             </ul>
 
@@ -29,10 +29,10 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{{ route('posts.index') }}">Posts</a></li>
-                  <li><a href="{{ route('categories.index') }}">Categories</a></li>
-                  <li><a href="{{ route('tags.index') }}">Tags</a></li>
+                  <li><a class="dropdown-item" href="{{ route('categories.index') }}">Categories</a></li>
+                  <li><a class="dropdown-item" href="{{ route('tags.index') }}">Tags</a></li>
                   <li>
-                  <a href="{{ route('logout') }}"
+                  <a class="dropdown-item" href="{{ route('logout') }}"
                       onclick="event.preventDefault();
                                document.getElementById('logout-form').submit();">
                       Logout
@@ -45,7 +45,7 @@
                 
                 @else
 
-                  <a href="{{ route('login') }}" class="btn btn-default">Login </a>
+                  <a class="dropdown-item" href="{{ route('login') }}" class="btn btn-default">Login </a>
 
                 @endif
 

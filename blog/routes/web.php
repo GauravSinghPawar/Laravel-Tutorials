@@ -69,3 +69,8 @@ Route::get('comments/{id}/edit',['uses' => 'CommentsController@edit', 'as' => 'c
 Route::put('comments/{id}',['uses' => 'CommentsController@update', 'as' => 'comments.update']);
 Route::delete('comments/{id}',['uses' => 'CommentsController@destroy', 'as' => 'comments.destroy']);
 Route::get('comments/{id}/delete',['uses' => 'CommentsController@delete', 'as' => 'comments.delete']);
+
+
+Route::get('/test-select2',function(){
+	return view('/posts/test-select2');
+});

@@ -36,6 +36,25 @@
 				  		@endforeach
 				  	</select>
 
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+    	$('.select2-multi').select2();
+	});
+
+</script>
+
+
+
+
+
+
+
+
 				  	{{ Form::label('tags', 'Tags:')}}
 				  	<select class="form-control select2-multi" name="tags[]" multiple="multiple">
 
@@ -74,16 +93,13 @@
 
 @section('script')
 
+
+
+
+
 {{!! Html::script('js/parsley.min.js') !!}}	
 {{!! Html::script('js/select2.min.js') !!}}	
 
-<script type="text/javascript">
-
-	$(document).ready(function() {
-    	$('.select2-multi').select2();
-	});
-
-</script>
 
 
 @endsection
