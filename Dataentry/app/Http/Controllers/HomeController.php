@@ -23,6 +23,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('newMiddlewareExample.form');
     }
+
+    public function formPost(Request $request)
+    {
+        $data[1] = $request->field1;
+        $data[2] = $request->field2;
+
+        return view('newMiddlewareExample.data')->with('data', $data);
+    }
+
+
+
+
 }

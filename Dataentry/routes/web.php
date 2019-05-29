@@ -23,3 +23,9 @@ Route::get('/home', 'DataController@index')->name('home');
 //Route::get('/show_data', 'DataController@index')->name('showData');
 
 Route::resource('data', 'DataController');
+
+
+//Route for testing the two new middleware 1)Trim Empty Spaces from Strings  2)Convert empty strings to NULL 
+
+Route::get('/form', 'HomeController@index')->name('form');
+Route::post('/form', 'HomeController@formPost')->name('form.submit');
