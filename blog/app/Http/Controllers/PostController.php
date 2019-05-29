@@ -67,8 +67,8 @@ class PostController extends Controller
             'category_id'   => 'required|integer',
             'body'          => 'required',
             'featured_image' => 'sometimes|image' 
-        )
-    );
+             )
+        );
         
 
         //Store in the database

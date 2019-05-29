@@ -38,5 +38,11 @@ class Kernel extends ConsoleKernel
         $this->load(__DIR__.'/Commands');
 
         require base_path('routes/console.php');
+
+        $this->command('im{name}', function($name){
+            $this->info('Good to meet you '.$name);
+        })->describe('This command says hello back to you!');
+
+
     }
 }
